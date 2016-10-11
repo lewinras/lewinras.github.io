@@ -13,43 +13,50 @@
     <script src="bootstrap.min.js"></script>
     <style>
         /* Custom Styles */
-        ul.nav-tabs{
+        ul.nav-tabs {
             width: 140px;
             margin-top: 20px;
             border-radius: 4px;
             border: 1px solid #ddd;
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
         }
-        ul.nav-tabs li{
+
+        ul.nav-tabs li {
             margin: 0;
             border-top: 1px solid #ddd;
         }
-        ul.nav-tabs li:first-child{
+
+        ul.nav-tabs li:first-child {
             border-top: none;
         }
-        ul.nav-tabs li a{
+
+        ul.nav-tabs li a {
             margin: 0;
             padding: 8px 16px;
             border-radius: 0;
         }
-        ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+
+        ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
             color: #fff;
             background: #0088cc;
             border: 1px solid #0088cc;
         }
-        ul.nav-tabs li:first-child a{
+
+        ul.nav-tabs li:first-child a {
             border-radius: 4px 4px 0 0;
         }
-        ul.nav-tabs li:last-child a{
+
+        ul.nav-tabs li:last-child a {
             border-radius: 0 0 4px 4px;
         }
-        ul.nav-tabs.affix{
+
+        ul.nav-tabs.affix {
             top: 30px; /* Set the top position of pinned element */
         }
     </style>
     <title>Title</title>
 </head>
-<body data-spy="scroll"  data-target="#myScrollspy">
+<body data-spy="scroll" data-target="#myScrollspy">
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -90,39 +97,45 @@
     <div class="row">
         <div class="col-xs-3" id="myScrollspy">
             <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
-                <li class="active"><a href="#section-1">操作系统</a></li>
-                <li><a href="#section-2">第二部分</a></li>
-                <li><a href="#section-3">第三部分</a></li>
-                <li><a href="#section-4">第四部分</a></li>
-                <li><a href="#section-5">第五部分</a></li>
+                <li class="active"><a href="#section-1">系统死机操作</a></li>
+                <li><a href="#section-2">删除，移动文件操作</a></li>
+                <li><a href="#section-3">电脑卡</a></li>
+                <li><a href="#section-4">软件问题</a></li>
+                <li><a href="#section-5">健康</a></li>
             </ul>
         </div>
         <div class="col-xs-9">
-            <h2 id="section-1">操作系统</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
-            <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus.</p>
+            <h2 id="section-1">系统死机操作</h2>
+            <p>当系统卡住的时候，一般是因为某一个软件所在的进程超时，然后拖累了整个系统，这种时候千万不要动不动就按电源强制关机或者重新启动，正确的方法是应该同时按ctrl + alt + del三个键，等待出现壁纸背景的界面，然后选择任务管理器，然后在任务管理器上强制结束该未响应的软件</p>
+            <p>当然，当电脑蓝屏的时候只有按电源键强制重启</p>
             <hr>
-            <h2 id="section-2">第二部分</h2>
-            <p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam in sagittis lectus. Suspendisse ultrices placerat accumsan. Mauris quis dapibus orci. In dapibus velit blandit pharetra tincidunt. Quisque non sapien nec lacus condimentum facilisis ut iaculis enim. Sed viverra interdum bibendum. Donec ac sollicitudin dolor. Sed fringilla vitae lacus at rutrum. Phasellus congue vestibulum ligula sed consequat.</p>
-            <p>Vestibulum consectetur scelerisque lacus, ac fermentum lorem convallis sed. Nam odio tortor, dictum quis malesuada at, pellentesque vitae orci. Vivamus elementum, felis eu auctor lobortis, diam velit egestas lacus, quis fermentum metus ante quis urna. Sed at facilisis libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum bibendum blandit dolor. Nunc orci dolor, molestie nec nibh in, hendrerit tincidunt ante. Vivamus sem augue, hendrerit non sapien in, mollis ornare augue.</p>
+            <h2 id="section-2">删除，移动文件操作</h2>
+            <p>你的电脑桌面上有很多快捷方式，它们不是真正的可执行文件，而是一个指引文件，该指引文件存储着真正的可执行文件的地址，当运行QQ这个快捷方式的时候，快捷方式会根据它存储的真正可执行文件地址去调用硬盘里的QQ启动文件，从而达到启动QQ的目的</p>
+            <p>正因为电脑桌面上的快捷方式记录的是真正的可执行文件的存放地址，如果你把真正的可执行文件从一个硬盘转移到了另一个硬盘，这个时候桌面的快捷方式就会无效，因为它指向的地址已经没有这个可执行文件了</p>
+            <p>正在运行的文件是无法被删除的，在删除文件之前，要确保文件没有在使用或者运行状态</p>
+            <p></p>
             <hr>
-            <h2 id="section-3">第三部分</h2>
-            <p>Integer pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget sapien vel, porttitor bibendum enim. Donec sed nibh vitae lorem porttitor blandit in nec ante. Pellentesque vitae metus ipsum. Phasellus sed nunc ac sem malesuada condimentum. Etiam in aliquam lectus. Nam vel sapien diam. Donec pharetra id arcu eget blandit. Proin imperdiet mattis augue in porttitor. Quisque tempus enim id lobortis feugiat. Suspendisse tincidunt risus quis dolor fringilla blandit. Ut sed sapien at purus lacinia porttitor. Nullam iaculis, felis a pretium ornare, dolor nisl semper tortor, vel sagittis lacus est consequat eros. Sed id pretium nisl. Curabitur dolor nisl, laoreet vitae aliquam id, tincidunt sit amet mauris.</p>
-            <p>Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget ante rutrum adipiscing. Cras interdum ipsum mattis, tempus mauris vel, semper ipsum. Duis sed dolor ut enim lobortis pellentesque ultricies ac ligula. Pellentesque convallis elit nisi, id vulputate ipsum ullamcorper ut. Cras ac pulvinar purus, ac viverra est. Suspendisse potenti. Integer pellentesque neque et elementum tempus. Curabitur bibendum in ligula ut rhoncus.</p>
-            <p>Quisque pharetra velit id velit iaculis pretium. Nullam a justo sed ligula porta semper eu quis enim. Pellentesque pellentesque, metus at facilisis hendrerit, lectus velit facilisis leo, quis volutpat turpis arcu quis enim. Nulla viverra lorem elementum interdum ultricies. Suspendisse accumsan quam nec ante mollis tempus. Morbi vel accumsan diam, eget convallis tellus. Suspendisse potenti.</p>
+            <h2 id="section-3">电脑卡</h2>
+            <p>一方面是电脑配置有问题，另一方面是流氓软件，流氓进程的存在导致的，比如2345,360这一系列就是流氓软件，同时所谓的正规软件也会偷偷在电脑后台开进程，占用电脑资源</p>
+            <p>解决办法是卸载流氓软件，同时下载腾讯电脑管家，使用电脑管家的优化启动速度功能，关掉不使用的进程，同时注意不要同时开启过多的软件。</p>
+
             <hr>
-            <h2 id="section-4">第四部分</h2>
-            <p>Suspendisse a orci facilisis, dignissim tortor vitae, ultrices mi. Vestibulum a iaculis lacus. Phasellus vitae convallis ligula, nec volutpat tellus. Vivamus scelerisque mollis nisl, nec vehicula elit egestas a. Sed luctus metus id mi gravida, faucibus convallis neque pretium. Maecenas quis sapien ut leo fringilla tempor vitae sit amet leo. Donec imperdiet tempus placerat. Pellentesque pulvinar ultrices nunc sed ultrices. Morbi vel mi pretium, fermentum lacus et, viverra tellus. Phasellus sodales libero nec dui convallis, sit amet fermentum sapien auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eu elementum nibh, quis varius libero.</p>
-            <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus.</p>
-            <p>Phasellus fermentum, neque sit amet sodales tempor, enim ante interdum eros, eget luctus ipsum eros ut ligula. Nunc ornare erat quis faucibus molestie. Proin malesuada consequat commodo. Mauris iaculis, eros ut dapibus luctus, massa enim elementum purus, sit amet tristique purus purus nec felis. Morbi vestibulum sapien eget porta pulvinar. Nam at quam diam. Proin rhoncus, felis elementum accumsan dictum, felis nisi vestibulum tellus, et ultrices risus felis in orci. Quisque vestibulum sem nisl, vel congue leo dictum nec. Cras eget est at velit sagittis ullamcorper vel et lectus. In hac habitasse platea dictumst. Etiam interdum iaculis velit, vel sollicitudin lorem feugiat sit amet. Etiam luctus, quam sed sodales aliquam, lorem libero hendrerit urna, faucibus rhoncus massa nibh at felis. Curabitur ac tempus nulla, ut semper erat. Vivamus porta ullamcorper sem, ornare egestas mauris facilisis id.</p>
-            <p>Ut ut risus nisl. Fusce porttitor eros at magna luctus, non congue nulla eleifend. Aenean porttitor feugiat dolor sit amet facilisis. Pellentesque venenatis magna et risus commodo, a commodo turpis gravida. Nam mollis massa dapibus urna aliquet, quis iaculis elit sodales. Sed eget ornare orci, eu malesuada justo. Nunc lacus augue, dictum quis dui id, lacinia congue quam. Nulla sem sem, aliquam nec dolor ac, tempus convallis nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla suscipit convallis iaculis. Quisque eget commodo ligula. Praesent leo dui, facilisis quis eleifend in, aliquet vitae nunc. Suspendisse fermentum odio ac massa ultricies pellentesque. Fusce eu suscipit massa.</p>
+            <h2 id="section-4">软件问题</h2>
+            <p>百分之九十以上的软件在重装系统之后都会无法使用，需要重新下载安装，所以明智的方法是，重要文件放一个盘，软件放另一个盘，然后系统文件在c盘就不用去动他。然后一旦重装，软件所在的那个盘就全部删掉</p>
+            <p>软件安装好之后，要做的事情就是修改软件的默认下载内容保存地址，改成重要文件所在硬盘，注意放单独文件夹里，以及取消软件开机自启动</p>
+            <p>很多软件安装的时候有陷阱，要仔细看，有时候它会默认给你勾选了其他软件，要取消后再点下一步，否则会不小心装一大堆没用软件</p>
+            <p>一般基本的软件，除了教学软件之外，需要的不多的，主要是 杀毒：腾讯电脑管家 办公：office/wps 音乐：网易云音乐或QQ音乐  聊天：qq或微信电脑版  浏览器：chrome浏览器（千万不要用IE，IE很不安全，除非你发现你们学校的垃圾网站chrome浏览器显示不完整，这个时候就只能用IE了） 下载：迅雷极速版</p>
+            <p>更新，卸载软件请用腾讯电脑管家的软件管理功能</p>
             <hr>
-            <h2 id="section-5">第五部分</h2>
-            <p>Nam eget purus nec est consectetur vehicula. Nullam ultrices nisl risus, in viverra libero egestas sit amet. Etiam porttitor dolor non eros pulvinar malesuada. Vestibulum sit amet est mollis nulla tempus aliquet. Praesent luctus hendrerit arcu non laoreet. Morbi consequat placerat magna, ac ornare odio sagittis sed. Donec vitae ullamcorper purus. Vivamus non metus ac justo porta volutpat.</p>
-            <p>Vivamus mattis accumsan erat, vel convallis risus pretium nec. Integer nunc nulla, viverra ut sem non, scelerisque vehicula arcu. Fusce bibendum convallis augue sit amet lobortis. Cras porta urna turpis, sodales lobortis purus adipiscing id. Maecenas ullamcorper, turpis suscipit pellentesque fringilla, massa lacus pulvinar mi, nec dignissim velit arcu eget purus. Nam at dapibus tellus, eget euismod nisl. Ut eget venenatis sapien. Vivamus vulputate varius mauris, vel varius nisl facilisis ac. Nulla aliquet justo a nibh ornare, eu congue neque rutrum.</p>
-            <p>Suspendisse a orci facilisis, dignissim tortor vitae, ultrices mi. Vestibulum a iaculis lacus. Phasellus vitae convallis ligula, nec volutpat tellus. Vivamus scelerisque mollis nisl, nec vehicula elit egestas a. Sed luctus metus id mi gravida, faucibus convallis neque pretium. Maecenas quis sapien ut leo fringilla tempor vitae sit amet leo. Donec imperdiet tempus placerat. Pellentesque pulvinar ultrices nunc sed ultrices. Morbi vel mi pretium, fermentum lacus et, viverra tellus. Phasellus sodales libero nec dui convallis, sit amet fermentum sapien auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eu elementum nibh, quis varius libero.</p>
-            <p>Morbi sed fermentum ipsum. Morbi a orci vulputate tortor ornare blandit a quis orci. Donec aliquam sodales gravida. In ut ullamcorper nisi, ac pretium velit. Vestibulum vitae lectus volutpat, consequat lorem sit amet, pulvinar tellus. In tincidunt vel leo eget pulvinar. Curabitur a eros non lacus malesuada aliquam. Praesent et tempus odio. Integer a quam nunc. In hac habitasse platea dictumst. Aliquam porta nibh nulla, et mattis turpis placerat eget. Pellentesque dui diam, pellentesque vel gravida id, accumsan eu magna. Sed a semper arcu, ut dignissim leo.</p>
-            <p>Sed vitae lobortis diam, id molestie magna. Aliquam consequat ipsum quis est dictum ultrices. Aenean nibh velit, fringilla in diam id, blandit hendrerit lacus. Donec vehicula rutrum tellus eget fermentum. Pellentesque ac erat et arcu ornare tincidunt. Aliquam erat volutpat. Vivamus lobortis urna quis gravida semper. In condimentum, est a faucibus luctus, mi dolor cursus mi, id vehicula arcu risus a nibh. Pellentesque blandit sapien lacus, vel vehicula nunc feugiat sit amet.</p>
+            <h2 id="section-5">健康</h2>
+            <p>屏幕适当调暗，考虑到电脑屏幕对人的辐射，可以考虑开启腾讯电脑管家的护眼小助手的护眼配色功能，开启方法可以百度</p>
+
+            <h2 id="section-6">U盘安全</h2>
+            <p>U盘很容易中毒，所以U盘里要创建一个文件，名字叫做autorun.inf，然后将它设为只读文件，怎么设百度，别忘了看后缀名对不对，一般后缀名隐藏的，可以百度看自己的电脑后缀名是否是隐藏状态</p>
+
+
+            <p></p>
+
         </div>
     </div>
 </div>
